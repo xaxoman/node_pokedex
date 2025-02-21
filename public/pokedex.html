@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex con node</title>
+
+    <!-- UTILIZZIAMO LA POKEAPI
+        https://pokeapi.co/ 
+    -->
+</head>
+<body>
+    <nav class="pokedex_nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pokedex.html">Pokédex</a></li>
+        <li><a href="search.html">Cerca</a></li>
+    </nav>
+    <div id="pokedex_intro">
+        <h1>Tutti i Pokemon</h1>
+        <div id="pokemon-list"></div>
+       
+    </div>
+   
+    <!-- Remove the inline script and add proper script references -->
+    <script src="/client.js"></script>
+    <script>
+         // avvia la funzione fetchpokemon() al caricare della pagina
+        window.onload = fetchPokemon();
+    </script>
+    <script src="../index.js"></script>
+</body>
+</html>

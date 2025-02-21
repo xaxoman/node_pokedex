@@ -1,0 +1,82 @@
+/* PIXEL STYLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --poke_red: #d13325;
+    --poke_yellow: #f7e39c;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--poke_yellow);
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.pokedex_nav {
+
+    display: flex;
+    justify-content: center;
+    background-color: var(--poke_red);
+
+}
+
+.pokedex_nav li, a {
+
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--poke_yellow);
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.pokedex_nav a:hover {
+    color: black;
+}
+
+#pokedex_intro {
+
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50rem;
+    padding-top: 2rem;
+}
+
+#pokemon-list a {
+    color: black;
+    display: flex;
+    flex-direction: column-reverse;    
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+    margin: 0 auto 1rem auto;
+    max-width: 25rem;
+}
+
+#pokemon-list a:hover {
+
+    text-decoration: underline;
+}
+
+#pokemon-list img {
+    width: 100%;
+    max-width: 10rem;
+    height: 7.5rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+#pokemon_search{
+
+  padding: 0.3rem;
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+#pokemon_search::placeholder {
+    
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+}
+
